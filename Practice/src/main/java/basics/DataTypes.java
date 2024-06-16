@@ -2,7 +2,7 @@ package basics;
 
 public class DataTypes {
 	
-	static int a;
+//	static int a;
 	static byte b;
 	static short c;
 	static long d;
@@ -13,14 +13,18 @@ public class DataTypes {
 
 	public static void main(String[] args) {
 		
-		a=10;
+//		a=10; // single line commenting (Ctrl + /)
 		
-		System.out.print(a);
-		System.out.print(b);
-		System.out.println(c);
-		System.out.println(d);
-		System.out.println(e);
-		System.out.println(f);
+		int a =9;  // local variable
+		
+		
+		/*
+		 * Multiple line commenting (Ctrl + Shift + /)
+		 * 
+		 * System.out.println(a); System.out.println(b); System.out.println(c);
+		 * System.out.println(d); System.out.println(e); System.out.println(f);
+		 */
+		 
 		System.out.println(g);
 		System.out.println(h);
 
