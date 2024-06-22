@@ -1,5 +1,5 @@
 /*
- * Operators: Symbols which perform operations on Operand/s (Input values given to that operation).
+ * Operators: Symbols which perform operations on Operand/s (Input values/ variables given to that operation).
  * 
  * Ex:
  * 
@@ -36,13 +36,17 @@
  *  	Bitwise OR , | :
  *  	Bitwise XOR, ^ :
  *  	Bitwise NOT, ~ :
+ *  
  *  5. Arithmetic Operators:+, -, *, /, %, ++, -- ; i/o: numeric
- *  6. Shift Operator
+ *  6. Shift Operator: 
+ *  	Right shift: >>
+ *  	Left shift: <<
  *  
  *  Classification 2:
  *  1. Unary Operators: ++, --, =
  *  2. Binary Operators: +, -,  AND --> &&; OR --> ||
  *  3. Ternary Operators: 
+ *  	(condition) ? if true o/p : if false o/p
  * 
  * */
 
@@ -114,6 +118,19 @@ public class Operators {
 		/* Bitwise Operators */
 		System.out.println("========Bitwise Operators========");
 		System.out.println(5 & 6);
+		System.out.println(5 | 6);
+		System.out.println(5 ^ 6);
+		System.out.println(~5);
+		
+		/* Shift Operators */
+		System.out.println("========Shift Operators=========");
+		System.out.println(5<<6);
+		
+		/* Ternary Operators */
+		System.out.println("=========Ternary Operators=======");
+		int m = 14;
+		int n = 7;
+		System.out.println((m>n)?m:n);
 		
 	}
 
