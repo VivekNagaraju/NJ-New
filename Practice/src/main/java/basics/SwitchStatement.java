@@ -3,7 +3,7 @@ package basics;
 public class SwitchStatement {
 
 	public static void main(String[] args) {
-		int day =19;
+		int day =14;
 		switch (day) {
 		case 1:
 			System.out.println("Today is Sunday");
