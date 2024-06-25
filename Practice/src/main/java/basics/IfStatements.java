@@ -7,7 +7,7 @@ public class IfStatements {
 		int age=5;
 		if (age>18) {
 			if (age>59) {
-				System.out.println("You're a senior citizen");				
+				System.out.println("You're a senior citizen");
 			}else {
 				System.out.println("You're an adult");
 			}
