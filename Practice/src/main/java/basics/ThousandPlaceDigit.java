@@ -27,6 +27,8 @@ public class ThousandPlaceDigit {
 		
 			if (d.equalsIgnoreCase("N")) {
 				break;
+			}else if(d.equalsIgnoreCase("Y")){
+				continue;
 			}else {
 				System.out.println("Please enter Y/N only");
 				String e=s.next();
