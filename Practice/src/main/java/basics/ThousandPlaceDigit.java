@@ -34,6 +34,8 @@ public class ThousandPlaceDigit {
 				String e=s.next();
 				if (e.equalsIgnoreCase("N")) {
 					break;
+				}else {
+					break;
 				}
 			}
 		
