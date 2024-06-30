@@ -1,23 +1,16 @@
-package basics;
+package oops;
 
 public class OOPS {
 
 	public static void main(String[] args) {
 		// Syntax for creating an object: ClassName objectName = new ClassName();
 		
-		Car maruthi = new Car("Grey", 4, 4);
-		/*
-		 * maruthi.color="Grey"; maruthi.noOfWheels=4; maruthi.seats=4;
-		 */
-//		maruthi.start();
-		
+		Car maruthi = new Car("White", 4, 4);
 		System.out.println("Color of Maruthi Car "+maruthi.color);
-//		System.out.println(maruthi.noOfWheels);
-//		System.out.println(maruthi.seats);
+		maruthi.start();
 		
-		Car swift = new Car("White", 4, 5);
+		Car swift = new Car("Red", 6, 5);
 		System.out.println("Color of Swift Car "+swift.color);
-		System.out.println("Color of Maruthi Car "+maruthi.color);
 
 	}
 
@@ -28,12 +21,13 @@ class Car{
 	int noOfWheels;
 	int seats;
 	
-	Car(String c, int w, int s){
-//		System.out.println("Car class constructor has been called");
-		this.color=c;
-		this.noOfWheels=w;
-		this.seats=s;
-	}
+	
+	  Car(String c, int w, int s){ 
+	  this.color=c;
+	  this.noOfWheels=w; 
+	  this.seats=s; 
+	  }
+	 
 	
 	public void start() {
 		System.out.println("The car has started");
