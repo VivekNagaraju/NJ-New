@@ -27,16 +27,23 @@ class GrandFather{
 	public void grandFatherProperty() {
 		System.out.println("This is Grand Father's property");
 	}
+
 }
 
 class Father extends GrandFather{ // Single-level inheritance
 	public void fatherProperty() {
 		System.out.println("This is Father's property");
 	}
+	
+	
 }
 
+
+
 class Child extends Father{ //Multi-level inheritance
+	
 	public void childProperty() {
+		
 		System.out.println("This is child's property");
 	}
 }
