@@ -19,7 +19,9 @@
  	- If we have to declare these variables inside any method we should use 'this' keyword
  	- Lifetime: Exist as long as the object exists
  	
- 4. Final Variables 
+ 4. Final Variables:
+ 	- Once assigned, the value will not change
+ 	- we use final variable to declare constants
  */
 package oops;
 
@@ -31,6 +33,9 @@ public class TypesOfVariables {
 		abc.displayKannadaMarks();
 		abc.displaySchoolName();
 		System.out.println(Student.schoolName);
+		abc.calculateAreaOfCircle(4);
+//		abc.pi=287; // final variable can not be re-initialized
+		abc.calculateAreaOfCircle(4);
 
 	}
 	
@@ -40,6 +45,7 @@ public class TypesOfVariables {
 		int name;
 		int id;
 		int kannada;
+		final double pi=3.142;
 		static String schoolName="iQuest";
 		public void displayTotalMarks(int kannada, int english, int maths ) {
 			this.kannada=kannada;
@@ -54,6 +60,13 @@ public class TypesOfVariables {
 		public void displaySchoolName()
 		{
 			System.out.println(schoolName);
+		}
+		
+		public void calculateAreaOfCircle(int r) {
+			
+			double area=pi*r*r;
+			System.out.printf("Area of circle is %f", area);
+			System.out.println();
 		}
 	}
 

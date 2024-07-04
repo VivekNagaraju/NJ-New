@@ -12,12 +12,14 @@ public class Inheritance {
 		Father appa = new Father();
 		appa.fatherProperty();
 		appa.grandFatherProperty();
+		appa.watch();
 		
 		System.out.println("===========Child class=============");
 		Child nanu = new Child();
 		nanu.childProperty();
 		nanu.fatherProperty();
 		nanu.grandFatherProperty();
+		nanu.watch();
 
 	}
 
@@ -27,6 +29,10 @@ class GrandFather{
 	public void grandFatherProperty() {
 		System.out.println("This is Grand Father's property");
 	}
+	
+	public void watch() {
+		System.out.println("This is Grand Father's watch");
+	}
 
 }
 
@@ -35,7 +41,9 @@ class Father extends GrandFather{ // Single-level inheritance
 		System.out.println("This is Father's property");
 	}
 	
-	
+	public void watch() {
+		System.out.println("This is Father's watch");
+	}
 }
 
 
@@ -46,4 +54,8 @@ class Child extends Father{ //Multi-level inheritance
 		
 		System.out.println("This is child's property");
 	}
+	
+//	public void watch() {
+//		System.out.println("This is Child's watch");
+//	}
 }
