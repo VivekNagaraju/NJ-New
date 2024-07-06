@@ -5,12 +5,18 @@ public class OOPS {
 	public static void main(String[] args) {
 		// Syntax for creating an object: ClassName objectName = new ClassName();
 		
-		Car maruthi = new Car("White", 4, 4);
-		System.out.println("Color of Maruthi Car "+maruthi.color);
-		maruthi.start();
+//		Car maruthi = new Car("White", 4, 4);
+//		System.out.println("Color of Maruthi Car "+maruthi.color);
+//		maruthi.start();
+//		
+//		Car swift = new Car("Red", 6, 5);
+//		System.out.println("Color of Swift Car "+swift.color);
 		
-		Car swift = new Car("Red", 6, 5);
-		System.out.println("Color of Swift Car "+swift.color);
+		Banking hdfc=new Banking();
+		hdfc.deposit(25);
+		System.out.println(Banking.name);
+		System.out.println(Encapsulation.publicMethod());
+		System.out.println(hdfc.id);
 
 	}
 

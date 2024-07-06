@@ -18,8 +18,13 @@ public class Polymorphism {
 
 	public static void main(String[] args) {
 		Maths calculator= new Maths();
-		calculator.sum(4, 7, 0);
-		calculator.sum(4.8, 5, 3);
+		int total=calculator.sum(5, 7, 0);
+		System.out.println("total="+total);
+		calculator.divide(total, 2);
+//		double absoluteValue=Math.abs(-189692.267373);
+//		System.out.println(absoluteValue);
+//		int result=(int)(absoluteValue/1000)%10;
+//		System.out.println(result);
 
 	}
 	
@@ -27,10 +32,11 @@ public class Polymorphism {
 
 }
 class Maths {
-	public void sum(int a, int b, int c) {
+	public int sum(int a, int b, int c) {
 		int total= a+b+c;
-		System.out.printf("Sum of %d, %d, %d is %d", a, b, c, total);
-		System.out.println();
+//		System.out.printf("Sum of %d, %d, %d is %d", a, b, c, total);
+//		System.out.println();
+		return total;
 		
 	}
 	
@@ -38,5 +44,11 @@ class Maths {
 		double total= a+b+c;
 		System.out.printf("Sum of %f, %d, %d is %f", a, b, c, total);
 		System.out.println();
+	}
+	
+	public void divide(double dividend, double divisor) {
+		double quotient = dividend/divisor;
+		System.out.println(quotient);
+		
 	}
 }
