@@ -10,14 +10,20 @@ package oops;
 public class Encapsulation {
 
 	public static void main(String[] args) {
-		Banking sbi = new Banking();
-		sbi.deposit(1000);
-		sbi.deposit(1000);
-		publicMethod();
-		System.out.println(Banking.name);
-		System.out.println(sbi.id);
-		System.out.println(Encapsulation.publicMethod());
+//		Banking sbi = new Banking();
+//		sbi.deposit(1000);
+//		sbi.deposit(1000);
+//		publicMethod();
+//		System.out.println(Banking.name);
+//		System.out.println(sbi.id);
+//		System.out.println(Encapsulation.publicMethod());
 		
+		ATM atmUser = new ATM();
+		atmUser.insertCard();
+		atmUser.enterPIN();
+		atmUser.accountType();
+		atmUser.enterAmount();
+		atmUser.collectCash();
 
 	}
 	
@@ -60,13 +66,63 @@ class Banking{
 	
 }
 
-class ATM extends Banking{
+class ATM {
+	// public - insert card, enter pin, account type, enter amount, cash withdraw
 	
 	
-	public void getId() {
-		System.out.println(id);
+	public void insertCard() {
+		System.out.println("card is inserted");
+		cardValidation();
+	}
+	
+	public void enterPIN() {
+		System.out.println("PIN entered successfully");
+		pINValidation();
+	}
+	
+	public void accountType() {
+		System.out.println("Entered account type");
+		accountSelection();
+	}
+	
+	public void enterAmount() {
+		System.out.println(" Amount Entered");
+		balanceAvailability();
+		dispenseCash();
+		balanceUpdate();
+	}
+	
+	public void collectCash() {
+		System.out.println("Cash collected");
+	}
+	
+	// private - card validation, pin validation, account selection, amount validation, balance update
+	
+	private void cardValidation() {
+		System.out.println("Card validated successfully");
+	}
+	
+	private void pINValidation() {
+		System.out.println("PIN validated successfully");
+	}
+	
+	private void accountSelection() {
+		System.out.println("Account type selected");
+	}
+	
+	private void balanceAvailability() {
+		System.out.println("Balance is available");
+	}
+	
+	private void dispenseCash() {
+		System.out.println("Cash dispensed");
+	}
+	
+	private void balanceUpdate() {
+		System.out.println("Balance updated");
 	}
 }
+	
 
 
 
