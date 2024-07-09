@@ -12,17 +12,16 @@ public class OOPS {
 //		Car swift = new Car("Red", 6, 5);
 //		System.out.println("Color of Swift Car "+swift.color);
 		
-		Banking hdfc=new Banking();
-		hdfc.deposit(25);
-		System.out.println(Banking.name);
-		System.out.println(Encapsulation.publicMethod());
-		System.out.println(hdfc.id);
+//		Banking hdfc=new Banking();
+//		hdfc.deposit(25);
+//		System.out.println(Banking.name);
+//		System.out.println(Encapsulation.publicMethod());
+//		System.out.println(hdfc.id);
 
 	}
 
 }
-
-class Car{
+abstract class Car{
 	String color;
 	int noOfWheels;
 	int seats;
@@ -32,6 +31,9 @@ class Car{
 	  this.color=c;
 	  this.noOfWheels=w; 
 	  this.seats=s; 
+	  }
+	  Car(){
+		  
 	  }
 	 
 	

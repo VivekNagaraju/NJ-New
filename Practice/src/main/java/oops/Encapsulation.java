@@ -39,7 +39,7 @@ public class Encapsulation {
 
 
 
-class Banking{
+abstract class Banking{
 	// amount, balance
 	//deposit, withdraw, balance-check
 	private int balance;
@@ -63,6 +63,9 @@ class Banking{
 	public void getId() {
 		System.out.println(id);
 	}
+	
+	public abstract void displayInterestRate();
+	
 	
 }
 
