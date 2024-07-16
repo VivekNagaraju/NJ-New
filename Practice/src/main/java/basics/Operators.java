@@ -131,7 +131,6 @@ public class Operators {
 		int m = 14;
 		int n = 7;
 		System.out.println((m>n)?m:n);
-		
 	}
 
 }
