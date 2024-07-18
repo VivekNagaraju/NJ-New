@@ -9,6 +9,7 @@
 package dataStructures;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 
 public class MyArrayList {
@@ -21,17 +22,39 @@ public class MyArrayList {
 		arrayList1.add(null);
 		System.out.println(arrayList1);
 		arrayList1.add(5);
-//		arrayList1.add(3);
-//		arrayList1.add(4);
-//		arrayList1.add(6);
-//		arrayList1.add(8);
+		arrayList1.add(3);
+		arrayList1.add(4);
+		arrayList1.add(6);
+		arrayList1.add(8);
 		System.out.println(arrayList1);
-		System.out.println(arrayList1.get(0));
-		System.out.println(arrayList1.get(1));
+//		System.out.println(arrayList1.get(0));
+//		System.out.println(arrayList1.get(1));
 //		System.out.println("Negative index"+arrayList1.get(-1)); // Negative index is not supported
 //		System.out.println(arrayList1.indexOf(6));
 //		System.out.println(arrayList1.indexOf(8));
-		System.out.println(arrayList1.indexOf(1)); // return -1 because element is not present in the list
+//		System.out.println(arrayList1.indexOf(1)); // return -1 because element is not present in the list
+		
+		System.out.println("=====Basic for loop=====");
+		for(int i=0; i<arrayList1.size(); i++) {
+			System.out.println(arrayList1.get(i));
+		}
+		
+		System.out.println("=====Advanced for loop=====");
+		for(Integer arrayElement : arrayList1) {
+			System.out.println(arrayElement);
+		}
+		
+		System.out.println("=====Iterator=====");
+		System.out.println(arrayList1);
+		Iterator<Integer> arrayIterator= arrayList1.iterator();
+		while(arrayIterator.hasNext()) {
+			
+			
+			if(arrayIterator.next()== (Integer)4) {
+				arrayIterator.remove();
+			}
+		}
+		System.out.println(arrayList1);
 		
 		
 		
