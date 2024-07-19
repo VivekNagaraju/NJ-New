@@ -20,12 +20,15 @@ public class MyArrayList {
 		ArrayList<Integer> arrayList1 = new ArrayList<Integer>();
 		System.out.println(arrayList1);
 		arrayList1.add(null);
+		arrayList1.add(null);
 		System.out.println(arrayList1);
 		arrayList1.add(5);
 		arrayList1.add(3);
 		arrayList1.add(4);
 		arrayList1.add(6);
 		arrayList1.add(8);
+		arrayList1.add(8);
+//		arrayList1.add("abc");
 		System.out.println(arrayList1);
 //		System.out.println(arrayList1.get(0));
 //		System.out.println(arrayList1.get(1));
@@ -49,16 +52,26 @@ public class MyArrayList {
 		Iterator<Integer> arrayIterator= arrayList1.iterator();
 		while(arrayIterator.hasNext()) {
 			
+			Integer arrayObject=arrayIterator.next();
+			System.out.println(arrayObject);
 			
-			if(arrayIterator.next()== (Integer)4) {
+			if(arrayObject== (Integer)4) {
 				arrayIterator.remove();
 			}
 		}
 		System.out.println(arrayList1);
 		
+		System.out.println("====Heterogeneous Array List");
 		
-		
+		ArrayList<Object> arrayList2 = new ArrayList<Object>();
+		arrayList2.add(4);
+		arrayList2.add(null);
+		arrayList2.add("abc");
+		System.out.println(arrayList2);
 
 	}
+	
+
+
 
 }
