@@ -29,7 +29,7 @@ public class MyHashSet {
 			System.out.println(element);
 		}
 		
-		
+		hashSet1.addAll(hashSet1);
 		
 	
 

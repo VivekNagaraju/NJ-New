@@ -13,6 +13,10 @@ public class MyHashMap {
 		System.out.println(hashMap1);
 		hashMap1.put(3, "abchb");
 		System.out.println(hashMap1);
+		System.out.println(hashMap1.get(3));
+		System.out.println(hashMap1.get(4));
+		System.out.println(hashMap1.keySet());
+		System.out.println(hashMap1.values());
 
 	}
 
