@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class FirstProgram {
+public class DropDown {
 
 	public static void main(String[] args) {
 		
@@ -16,24 +16,17 @@ public class FirstProgram {
 		// 2. Navigating to test site
 		driver.get("https://testautomationpractice.blogspot.com/");
 		
-		// 3. Enter Name
-		// 3(a). Locating the element
-		WebElement nameTxtBx = driver.findElement(By.id("name"));
-		
-		// 3(b). Interact with the element
-		nameTxtBx.sendKeys("Vivek");
-		nameTxtBx.click();
-		
-		// 4. Select country
+		// 3. Select country
 		/*
-		 * // 4a. Click on drop down
+		 * // 3a. Click on drop down
 		WebElement countryDropDown = driver.findElement(By.id("country"));
 		countryDropDown.click();
 		
-		//4b. Click on a country
+		//3b. Click on a country
 		WebElement canada = driver.findElement(By.xpath("//*[@id=\"country\"]/option[2]"));
 		canada.click();
 		 */
+		
 		WebElement countryDropDown = driver.findElement(By.id("country"));
 		
 		Select countrySelect = new Select(countryDropDown);
