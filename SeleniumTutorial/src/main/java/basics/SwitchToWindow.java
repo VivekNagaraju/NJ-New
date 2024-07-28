@@ -75,5 +75,7 @@ public class SwitchToWindow {
 				driver.switchTo().window((String)windowHandlesArray2[2]);
 				System.out.println("Current page title: " + driver.getTitle());
 				
+				
+				
 	}
 }

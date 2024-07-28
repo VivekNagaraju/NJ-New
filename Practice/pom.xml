@@ -3,4 +3,19 @@
   <groupId>iquest</groupId>
   <artifactId>Practice</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <properties>
+        <selenium.version>4.22.0</selenium.version>
+    </properties>
+     <dependencies>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium.version}</version>
+        </dependency>
+        <dependency>
+    <groupId>com.google.guava</groupId>
+    <artifactId>guava</artifactId>
+    <version>31.0.1-jre</version> <!-- Use the latest version available -->
+</dependency>
+    </dependencies>
 </project>
