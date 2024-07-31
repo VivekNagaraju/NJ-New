@@ -36,6 +36,8 @@ public class SwitchToFrames {
 		 * // 6. Enter name in parent frame WebElement nameTxtBx =
 		 * driver.findElement(By.id("name")); nameTxtBx.sendKeys("Vivek");
 		 */
+		
+		
 
 	}
 
