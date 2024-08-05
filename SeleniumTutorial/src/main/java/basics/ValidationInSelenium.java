@@ -25,7 +25,9 @@ public class ValidationInSelenium {
 				
 				  if(loginTitle.isDisplayed() == true) {
 				  
-				  System.out.println("TEST PASSED"); }else { System.out.println("TEST FAILED");
+				  System.out.println("TEST PASSED"); }
+				  else { 
+					  System.out.println("TEST FAILED");
 				  }
 				 
 				
