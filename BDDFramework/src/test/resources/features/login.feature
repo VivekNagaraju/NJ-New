@@ -27,7 +27,17 @@ Feature: Orange HRM Login feature
     And User enters password
     And User clicks on Login button
     Then User should be on dashboard page
-
+	
+	@tag2
+  Scenario: Login to OrangeHRM Site with parameters
+    Given Chrome browser is launched
+    And User navigated to OrangeHRM Login Page
+    When User enters username "Admin"
+    And User enters password "admin123"
+    And User clicks on Login button
+    Then User should be on dashboard page
+    
+    
   #@tag2
   #Scenario Outline: Title of your scenario outline
     #Given I want to write a step with <name>
