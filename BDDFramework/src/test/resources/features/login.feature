@@ -21,8 +21,8 @@ Feature: Orange HRM Login feature
 
   @tag1
   Scenario: Login to OrangeHRM Site
-    Given Chrome browser is launched
-    And User navigated to OrangeHRM Login Page
+    #Given Chrome browser is launched
+    Given User navigated to OrangeHRM Login Page
     When User enters username
     And User enters password
     And User clicks on Login button

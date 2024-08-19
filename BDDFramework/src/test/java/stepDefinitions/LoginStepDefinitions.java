@@ -9,10 +9,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import driverManager.WebDriverManager;
 import io.cucumber.java.en.*;
+import pageObjects.LoginPage;
 
 public class LoginStepDefinitions {
-	WebDriver driver;
+//	WebDriver driver;
+	LoginPage loginPage;
+	WebDriver driver = WebDriverManager.getDriver();
 	@Given("Chrome browser is launched")
 	public void chrome_browser_is_launched() {
 		driver = new ChromeDriver();
@@ -28,20 +32,18 @@ public class LoginStepDefinitions {
 
 	@When("User enters username")
 	public void user_enters_username() {
-		WebElement usernametxtbx=driver.findElement(By.name("username"));
-		usernametxtbx.sendKeys("Admin");
+		loginPage = new LoginPage(driver);
+		loginPage.enterUserName("Admin");
 	}
 
 	@When("User enters password")
 	public void user_enters_password() {
-		WebElement passwordtxtbx=driver.findElement(By.name("password"));
-		passwordtxtbx.sendKeys("admin123");
+		loginPage.enterPassword("admin123");
 	}
 
 	@When("User clicks on Login button")
 	public void user_clicks_on_login_button() {
-		WebElement loginBtn=driver.findElement(By.tagName("button"));
-		loginBtn.click();
+		loginPage.clickOnLogin();
 	}
 
 	@Then("User should be on dashboard page")
