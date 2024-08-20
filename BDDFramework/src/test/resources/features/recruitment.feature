@@ -25,6 +25,6 @@ Feature: OrangeHRM Recruitment Feature
     And User enters password
     And User clicks on Login button
 
-  @navigateToRecruitmentModule
+  @navigateToRecruitmentModule @TC_RM_001
   Scenario: Validate the Navigation to recruitment module
     When User clicks on Recruitment menu item
