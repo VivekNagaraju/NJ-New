@@ -17,13 +17,12 @@ public class LoginStepDefinitions {
 //	WebDriver driver;
 	LoginPage loginPage;
 	WebDriver driver = WebDriverManager.getDriver();
-	@Given("Chrome browser is launched")
-	public void chrome_browser_is_launched() {
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		System.out.println("Chrome browser launched");
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-	}
+	/*
+	 * @Given("Chrome browser is launched") public void chrome_browser_is_launched()
+	 * { driver = new ChromeDriver(); driver.manage().window().maximize();
+	 * System.out.println("Chrome browser launched");
+	 * driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5)); }
+	 */
 
 	@Given("User navigated to OrangeHRM Login Page")
 	public void user_navigated_to_orange_hrm_login_page() {

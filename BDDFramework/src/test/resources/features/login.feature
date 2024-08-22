@@ -16,12 +16,11 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-@tag
+@tagLogin
 Feature: Orange HRM Login feature
 
   @tag1
   Scenario: Login to OrangeHRM Site
-    #Given Chrome browser is launched
     Given User navigated to OrangeHRM Login Page
     When User enters username
     And User enters password
@@ -30,12 +29,12 @@ Feature: Orange HRM Login feature
 	
 	@tag2
   Scenario: Login to OrangeHRM Site with parameters
-    Given Chrome browser is launched
+    #Given Chrome browser is launched
     And User navigated to OrangeHRM Login Page
-    When User enters username "Admin"
-    And User enters password "admin123"
-    And User clicks on Login button
-    Then User should be on dashboard page
+    #When User enters username "Admin"
+    #And User enters password "admin123"
+    #And User clicks on Login button
+    #Then User should be on dashboard page
     
     
   #@tag2
