@@ -1,9 +1,10 @@
-package driverManager;
+package stepDefinitions;
 
+import driverManager.WebDriverManager;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 
-public class BaseSteps {
+public class Hooks {
 	
 	@Before
     public void setUp() {
